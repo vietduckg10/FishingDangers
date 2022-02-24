@@ -1,0 +1,127 @@
+[31Jan2022 14:22:26.084] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmluserdevclient, --fml.mcpVersion, 20210115.111550, --fml.mcVersion, 1.16.5, --fml.forgeGroup, net.minecraftforge, --fml.forgeVersion, 36.2.2, --assetIndex, 1.16, --assetsDir, C:\Users\nguye\.gradle\caches\forge_gradle\assets, --version, MOD_DEV, --username, Dev, --accessToken, ❄❄❄❄❄❄❄❄, --userProperties, {}]
+[31Jan2022 14:22:26.089] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 8.0.9+86+master.3cf110c starting: java version 1.8.0_312 by Temurin
+[31Jan2022 14:22:26.693] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
+[31Jan2022 14:22:26.748] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.2 Source=file:/C:/Users/nguye/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.2/1cf212283d26f706fd3074318870bebd14d2a9ed/mixin-0.8.2.jar Service=ModLauncher Env=CLIENT
+[31Jan2022 14:22:29.271] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmluserdevclient' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\nguye\.gradle\caches\forge_gradle\assets, --assetIndex, 1.16, --username, Dev, --accessToken, ❄❄❄❄❄❄❄❄, --userProperties, {}]
+[31Jan2022 14:22:43.504] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[31Jan2022 14:22:45.514] [Render thread/ERROR] [net.minecraft.client.Minecraft/]: Failed to verify authentication
+com.mojang.authlib.exceptions.AuthenticationUnavailableException: null
+	at com.mojang.authlib.yggdrasil.YggdrasilSocialInteractionsService.checkPrivileges(YggdrasilSocialInteractionsService.java:97) ~[authlib-2.1.28.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilSocialInteractionsService.<init>(YggdrasilSocialInteractionsService.java:40) ~[authlib-2.1.28.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.createSocialInteractionsService(YggdrasilAuthenticationService.java:152) ~[authlib-2.1.28.jar:?]
+	at net.minecraft.client.Minecraft.createSocialInteractions(Minecraft.java:551) ~[forge-1.16.5-36.2.2_mapped_official_1.16.5-recomp.jar:?]
+	at net.minecraft.client.Minecraft.<init>(Minecraft.java:383) ~[forge-1.16.5-36.2.2_mapped_official_1.16.5-recomp.jar:?]
+	at net.minecraft.client.main.Main.main(Main.java:149) ~[forge-1.16.5-36.2.2_mapped_official_1.16.5-recomp.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_312]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_312]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_312]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_312]
+	at net.minecraftforge.userdev.FMLUserdevClientLaunchProvider.lambda$launchService$0(FMLUserdevClientLaunchProvider.java:52) ~[forge-1.16.5-36.2.2_mapped_official_1.16.5-recomp.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-8.0.9.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-8.0.9.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-8.0.9.jar:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.0.9.jar:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.0.9.jar:?]
+	at net.minecraftforge.userdev.LaunchTesting.main(LaunchTesting.java:108) [forge-1.16.5-36.2.2_mapped_official_1.16.5-recomp.jar:?]
+[31Jan2022 14:22:45.523] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[31Jan2022 14:22:45.769] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.2.2 build 10
+[31Jan2022 14:22:47.086] [modloading-worker-2/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 36.2.2, for MC 1.16.5 with MCP 20210115.111550
+[31Jan2022 14:22:47.086] [modloading-worker-2/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v36.2.2 Initialized
+[31Jan2022 14:22:47.757] [Render thread/INFO] [com.ducvn.fishingdangersmod.FishingDangersMod/]: HELLO from Register Block
+[31Jan2022 14:22:50.635] [Render thread/INFO] [com.mojang.text2speech.NarratorWindows/]: Narrator library for x64 successfully loaded
+[31Jan2022 14:22:50.941] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, Mod Resources
+[31Jan2022 14:23:02.597] [Worker-Main-8/INFO] [com.ducvn.fishingdangersmod.FishingDangersMod/]: HELLO FROM PREINIT
+[31Jan2022 14:23:02.598] [Worker-Main-8/INFO] [com.ducvn.fishingdangersmod.FishingDangersMod/]: DIRT BLOCK >> minecraft:dirt
+[31Jan2022 14:23:02.632] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[31Jan2022 14:23:03.331] [Worker-Main-8/INFO] [com.ducvn.fishingdangersmod.FishingDangersMod/]: Got game settings net.minecraft.client.GameSettings@2b4c7eae
+[31Jan2022 14:23:04.141] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: OUTDATED Current: 36.2.2 Target: 36.2.20
+[31Jan2022 14:23:04.714] [Worker-Main-4/INFO] [com.ducvn.fishingdangersmod.FishingDangersMod/]: Hello world from the MDK
+[31Jan2022 14:23:04.714] [Worker-Main-4/INFO] [com.ducvn.fishingdangersmod.FishingDangersMod/]: Got IMC [Hello world]
+[31Jan2022 14:23:06.257] [Render thread/INFO] [net.minecraft.client.audio.SoundSystem/]: OpenAL initialized.
+[31Jan2022 14:23:06.259] [Render thread/INFO] [net.minecraft.client.audio.SoundEngine/SOUNDS]: Sound engine started
+[31Jan2022 14:23:06.647] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[31Jan2022 14:23:06.856] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
+[31Jan2022 14:23:06.858] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[31Jan2022 14:23:06.862] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[31Jan2022 14:23:06.868] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[31Jan2022 14:23:06.873] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[31Jan2022 14:23:06.879] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[31Jan2022 14:23:09.968] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[31Jan2022 14:23:09.995] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[31Jan2022 14:23:09.998] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[31Jan2022 14:23:12.000] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
+[31Jan2022 14:23:38.115] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[31Jan2022 14:23:38.117] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[31Jan2022 14:23:38.118] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[31Jan2022 14:23:38.119] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[31Jan2022 14:23:38.120] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[31Jan2022 14:23:38.124] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, main, forge-1.16.5-36.2.2_mapped_official_1.16.5-recomp.jar
+[31Jan2022 14:23:39.254] [Render thread/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 7 recipes
+[31Jan2022 14:23:40.372] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 927 advancements
+[31Jan2022 14:23:40.819] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
+[31Jan2022 14:23:41.443] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[31Jan2022 14:23:41.444] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[31Jan2022 14:23:41.445] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[31Jan2022 14:23:41.446] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[31Jan2022 14:23:41.447] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[31Jan2022 14:23:41.447] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, main, forge-1.16.5-36.2.2_mapped_official_1.16.5-recomp.jar
+[31Jan2022 14:23:42.259] [Render thread/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 7 recipes
+[31Jan2022 14:23:42.860] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 927 advancements
+[31Jan2022 14:23:42.888] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
+[31Jan2022 14:23:43.900] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[31Jan2022 14:23:44.162] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Starting integrated minecraft server version 1.16.5
+[31Jan2022 14:23:44.163] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[31Jan2022 14:23:44.737] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[31Jan2022 14:23:46.425] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[31Jan2022 14:23:46.425] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[31Jan2022 14:23:46.425] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[31Jan2022 14:23:46.425] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[31Jan2022 14:23:46.991] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 23%
+[31Jan2022 14:23:47.089] [Server thread/INFO] [com.ducvn.fishingdangersmod.FishingDangersMod/]: HELLO from server starting
+[31Jan2022 14:23:47.093] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Time elapsed: 2338 ms
+[31Jan2022 14:23:47.851] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Changing view distance to 11, from 10
+[31Jan2022 14:23:49.693] [Netty Local Client IO #0/INFO] [net.minecraftforge.fml.network.NetworkHooks/]: Connected to a modded server.
+[31Jan2022 14:23:49.917] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@584fa6f9
+[31Jan2022 14:23:49.943] [Server thread/INFO] [net.minecraft.server.management.PlayerList/]: Dev[local:E:b5966887] logged in with entity id 31 at (408.46294337891004, 64.0, 126.3537434905994)
+[31Jan2022 14:23:50.241] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[31Jan2022 14:23:50.738] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 35 advancements
+[31Jan2022 14:23:51.185] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
+[31Jan2022 14:23:51.205] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[31Jan2022 14:23:51.899] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[31Jan2022 14:23:51.899] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[31Jan2022 14:23:51.985] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2146ms or 42 ticks behind
+[31Jan2022 14:24:13.491] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
+[31Jan2022 14:24:13.539] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[31Jan2022 14:24:13.843] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[31Jan2022 14:24:13.845] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[31Jan2022 14:24:15.840] [Render thread/INFO] [net.minecraft.network.NetworkSystem/]: Using default channel type
+[31Jan2022 14:24:15.858] [Render thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Started serving on 57741
+[31Jan2022 14:24:15.905] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Local game hosted on port 57741
+[31Jan2022 14:24:19.519] [User Authenticator #1/WARN] [net.minecraft.network.login.ServerLoginNetHandler/]: Failed to verify username but will let them in anyway!
+[31Jan2022 14:24:24.338] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@7cdd815f
+[31Jan2022 14:24:24.370] [Server thread/INFO] [net.minecraft.server.management.PlayerList/]: dummy[/192.168.1.151:57742] logged in with entity id 218 at (406.90843621589215, 63.0, 125.6106574082029)
+[31Jan2022 14:24:24.374] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: dummy joined the game
+[31Jan2022 14:24:24.504] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] dummy joined the game
+[31Jan2022 14:24:30.977] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] [Debug]: Chunk borders: shown
+[31Jan2022 14:24:31.518] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] [Debug]: Chunk borders: hidden
+[31Jan2022 14:25:01.522] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Look like dummy like your bait
+[31Jan2022 14:25:23.618] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Look like dummy like your bait
+[31Jan2022 14:25:27.108] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: dummy lost connection: Disconnected
+[31Jan2022 14:25:27.109] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: dummy left the game
+[31Jan2022 14:25:27.130] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] dummy left the game
+[31Jan2022 14:25:27.894] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Dev lost connection: Disconnected
+[31Jan2022 14:25:27.894] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[31Jan2022 14:25:27.978] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Stopping singleplayer server as player logged out
+[31Jan2022 14:25:28.032] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[31Jan2022 14:25:28.032] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[31Jan2022 14:25:28.039] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[31Jan2022 14:25:28.039] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[31Jan2022 14:25:28.727] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (New World (1)): All chunks are saved
+[31Jan2022 14:25:28.728] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[31Jan2022 14:25:28.728] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[31Jan2022 14:25:28.728] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[31Jan2022 14:25:28.729] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[31Jan2022 14:25:28.872] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (New World (1)): All chunks are saved
+[31Jan2022 14:25:29.020] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[31Jan2022 14:25:29.020] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[31Jan2022 14:25:29.630] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
