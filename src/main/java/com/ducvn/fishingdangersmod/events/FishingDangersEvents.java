@@ -5,6 +5,7 @@ import com.ducvn.fishingdangersmod.config.FishingDangersConfig;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.effect.LightningBoltEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.FishingBobberEntity;
 import net.minecraft.item.FishingRodItem;
@@ -12,7 +13,6 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.Util;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.Color;
-import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.Style;
 import net.minecraft.world.World;
@@ -50,7 +50,7 @@ public class FishingDangersEvents {
                             chanceTracker = chanceTracker + dangersChance.get(i);
                             if (chanceTracker > spawnNumber){
                                 dangerName = dangersList.get(i);
-                                if (dangerName.equals("minecraft:anvil") || dangerName.equals("minecraft:player")){
+                                if (dangerName.equals("minecraft:anvil") || dangerName.equals("minecraft:player") || dangerName.equals("minecraft:lightning")){
                                     specialType = true;
                                     break;
                                 }
@@ -94,6 +94,15 @@ public class FishingDangersEvents {
                                                 ((ServerWorld) world).updateChunkPos(unluckyPlayer);
                                             }
                                         }
+                                    }
+                                    else {
+                                        if (dangerName.equals("minecraft:lightning")){
+                                            playerEntity.sendMessage(new StringTextComponent("You just took the wrath of Poseidon"), Util.NIL_UUID);
+                                            LightningBoltEntity lightningBoltEntity = new LightningBoltEntity(EntityType.LIGHTNING_BOLT, world);
+                                            lightningBoltEntity.setPos(playerEntity.getX(), playerEntity.getY(), playerEntity.getZ());
+                                            world.addFreshEntity(lightningBoltEntity);
+                                        }
+
                                     }
                                 }
                             }
