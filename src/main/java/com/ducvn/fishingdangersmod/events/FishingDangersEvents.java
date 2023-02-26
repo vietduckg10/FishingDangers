@@ -2,15 +2,19 @@ package com.ducvn.fishingdangersmod.events;
 
 import com.ducvn.fishingdangersmod.FishingDangersMod;
 import com.ducvn.fishingdangersmod.config.FishingDangersConfig;
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.Style;
 import net.minecraft.network.chat.TextColor;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.util.SpawnUtil;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LightningBolt;
+import net.minecraft.world.entity.MobSpawnType;
+import net.minecraft.world.entity.monster.warden.Warden;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.FishingHook;
 import net.minecraft.world.item.FishingRodItem;
@@ -49,7 +53,8 @@ public class FishingDangersEvents {
                             chanceTracker = chanceTracker + dangersChance.get(i);
                             if (chanceTracker > spawnNumber){
                                 dangerName = dangersList.get(i);
-                                if (dangerName.equals("minecraft:anvil") || dangerName.equals("minecraft:player") || dangerName.equals("minecraft:lightning")){
+                                if (dangerName.equals("minecraft:anvil") || dangerName.equals("minecraft:player")
+                                        || dangerName.equals("minecraft:lightning")){
                                     specialType = true;
                                     break;
                                 }
@@ -58,13 +63,24 @@ public class FishingDangersEvents {
                             }
                         }
                         if (entity != null && specialType == false) {
-                            double randomY = random.nextDouble() * 0.5D;
-                            double d0 = playerEntity.getX() - fishingBobberEntity.getX();
-                            double d1 = playerEntity.getY() - fishingBobberEntity.getY() + randomY;
-                            double d2 = playerEntity.getZ() - fishingBobberEntity.getZ();
-                            entity.setPos(fishingBobberEntity.getX(), fishingBobberEntity.getY(), fishingBobberEntity.getZ());
-                            entity.setDeltaMovement(d0 * 0.1D, d1 * 0.1D + Math.sqrt(Math.sqrt(d0 * d0 + d1 * d1 + d2 * d2)) * 0.08D, d2 * 0.1D);
-                            world.addFreshEntity(entity);
+                            if (entity instanceof Warden){
+                                playerEntity.displayClientMessage(Component.literal("Run!")
+                                        .withStyle(ChatFormatting.RED).withStyle(ChatFormatting.BOLD), true
+                                );
+                                SpawnUtil.trySpawnMob(
+                                        EntityType.WARDEN, MobSpawnType.TRIGGERED, (ServerLevel) world,
+                                        fishingBobberEntity.blockPosition(), 20, 5, 6,
+                                        SpawnUtil.Strategy.ON_TOP_OF_COLLIDER).isPresent();
+                            }
+                            else {
+                                double randomY = random.nextDouble() * 0.5D;
+                                double d0 = playerEntity.getX() - fishingBobberEntity.getX();
+                                double d1 = playerEntity.getY() - fishingBobberEntity.getY() + randomY;
+                                double d2 = playerEntity.getZ() - fishingBobberEntity.getZ();
+                                entity.setPos(fishingBobberEntity.getX(), fishingBobberEntity.getY(), fishingBobberEntity.getZ());
+                                entity.setDeltaMovement(d0 * 0.1D, d1 * 0.1D + Math.sqrt(Math.sqrt(d0 * d0 + d1 * d1 + d2 * d2)) * 0.08D, d2 * 0.1D);
+                                world.addFreshEntity(entity);
+                            }
                         }
                         else {
                             if (dangerName != null){
@@ -102,7 +118,6 @@ public class FishingDangersEvents {
                                             lightningBoltEntity.setPos(playerEntity.getX(), playerEntity.getY(), playerEntity.getZ());
                                             world.addFreshEntity(lightningBoltEntity);
                                         }
-
                                     }
                                 }
                             }
